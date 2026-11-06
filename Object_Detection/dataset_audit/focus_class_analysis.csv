@@ -1,0 +1,4 @@
+class_name,object_count,images_with_class,median_box_area_fraction,small_boxes_lt_1pct,small_box_percent
+helmet,927,466,0.00251173161,663,71.52
+person,13802,7617,0.19509562666799998,1943,14.08
+safety-vest,530,213,0.005185539571,323,60.94

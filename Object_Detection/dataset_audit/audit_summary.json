@@ -1,0 +1,184 @@
+{
+  "dataset_path": "/Users/junedshaikh/Downloads/archive-3",
+  "output_path": "/Users/junedshaikh/Desktop/Object_Detection/dataset_audit",
+  "image_count": 8099,
+  "label_formats_found": [
+    "labels",
+    "voc_labels"
+  ],
+  "canonical_label_format_used_for_counts": "YOLO",
+  "label_file_count": 16198,
+  "objects_counted": 75994,
+  "invalid_or_unreadable_annotation_rows": 2,
+  "invalid_boxes_in_canonical_labels": 0,
+  "images_missing_canonical_label_file": 0,
+  "orphan_label_files_without_matching_image": 0,
+  "train_val_split": {
+    "train_files.txt": {
+      "listed_entries": 6479,
+      "unique_stems": 6479,
+      "entries_not_found_by_stem": 0
+    },
+    "val_files.txt": {
+      "listed_entries": 1620,
+      "unique_stems": 1620,
+      "entries_not_found_by_stem": 0
+    }
+  },
+  "train_val_overlap_stem_count": 0,
+  "train_val_overlap_examples": [],
+  "missing_label_image_examples": [],
+  "orphan_label_examples": [],
+  "class_distribution": [
+    {
+      "class_id": 0,
+      "class_name": "person",
+      "object_count": 13802
+    },
+    {
+      "class_id": 1,
+      "class_name": "ear",
+      "object_count": 7730
+    },
+    {
+      "class_id": 2,
+      "class_name": "ear-mufs",
+      "object_count": 318
+    },
+    {
+      "class_id": 3,
+      "class_name": "face",
+      "object_count": 8950
+    },
+    {
+      "class_id": 4,
+      "class_name": "face-guard",
+      "object_count": 134
+    },
+    {
+      "class_id": 5,
+      "class_name": "face-mask-medical",
+      "object_count": 670
+    },
+    {
+      "class_id": 6,
+      "class_name": "foot",
+      "object_count": 759
+    },
+    {
+      "class_id": 7,
+      "class_name": "tools",
+      "object_count": 4647
+    },
+    {
+      "class_id": 8,
+      "class_name": "glasses",
+      "object_count": 1945
+    },
+    {
+      "class_id": 9,
+      "class_name": "gloves",
+      "object_count": 2790
+    },
+    {
+      "class_id": 10,
+      "class_name": "helmet",
+      "object_count": 927
+    },
+    {
+      "class_id": 11,
+      "class_name": "hands",
+      "object_count": 15850
+    },
+    {
+      "class_id": 12,
+      "class_name": "head",
+      "object_count": 11985
+    },
+    {
+      "class_id": 13,
+      "class_name": "medical-suit",
+      "object_count": 157
+    },
+    {
+      "class_id": 14,
+      "class_name": "shoes",
+      "object_count": 4560
+    },
+    {
+      "class_id": 15,
+      "class_name": "safety-suit",
+      "object_count": 240
+    },
+    {
+      "class_id": 16,
+      "class_name": "safety-vest",
+      "object_count": 530
+    }
+  ],
+  "focus_class_analysis": [
+    {
+      "class_name": "helmet",
+      "object_count": 927,
+      "images_with_class": 466,
+      "median_box_area_fraction": 0.00251173161,
+      "small_boxes_lt_1pct": 663,
+      "small_box_percent": 71.52
+    },
+    {
+      "class_name": "person",
+      "object_count": 13802,
+      "images_with_class": 7617,
+      "median_box_area_fraction": 0.19509562666799998,
+      "small_boxes_lt_1pct": 1943,
+      "small_box_percent": 14.08
+    },
+    {
+      "class_name": "safety-vest",
+      "object_count": 530,
+      "images_with_class": 213,
+      "median_box_area_fraction": 0.005185539571,
+      "small_boxes_lt_1pct": 323,
+      "small_box_percent": 60.94
+    }
+  ],
+  "class_cooccurrence": [
+    {
+      "class_a": "person",
+      "class_b": "person",
+      "images_with_both": 7617
+    },
+    {
+      "class_a": "person",
+      "class_b": "safety-vest",
+      "images_with_both": 207
+    },
+    {
+      "class_a": "helmet",
+      "class_b": "person",
+      "images_with_both": 453
+    },
+    {
+      "class_a": "helmet",
+      "class_b": "helmet",
+      "images_with_both": 466
+    },
+    {
+      "class_a": "helmet",
+      "class_b": "safety-vest",
+      "images_with_both": 151
+    },
+    {
+      "class_a": "safety-vest",
+      "class_b": "safety-vest",
+      "images_with_both": 213
+    }
+  ],
+  "notes": [
+    "The script does not modify the dataset.",
+    "When both labels/ and voc_labels/ exist, YOLO labels are used for class counts to avoid double-counting parallel annotations.",
+    "VOC names not matching the SH17 class list are retained under their normalized names.",
+    "Class co-occurrence is image-level only; it does not prove a specific person is wearing PPE.",
+    "Review the split-list paths and missing-label examples before training."
+  ]
+}

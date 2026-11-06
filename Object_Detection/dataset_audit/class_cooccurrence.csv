@@ -1,0 +1,7 @@
+class_a,class_b,images_with_both
+person,person,7617
+person,safety-vest,207
+helmet,person,453
+helmet,helmet,466
+helmet,safety-vest,151
+safety-vest,safety-vest,213
